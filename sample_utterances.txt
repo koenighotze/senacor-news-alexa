@@ -1,0 +1,2 @@
+GetSenacorNews Was gibt es Aktuelles
+GetSenacorEvents Was passiert bei Senacor im {Date}

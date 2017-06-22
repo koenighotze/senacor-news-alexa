@@ -4,9 +4,8 @@
   "description": "News server for senacor events",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
-    "test": "lab -v -c",
-    "lint": "node_modules/jshint/bin/jshint src/ test/"
+    "lint": "node_modules/jshint/bin/jshint src/ test/",
+    "package": "pushd build/tmp && cp -rf ../../package.json ../../src/* . && npm i --production && zip -r -1 ../skill.zip * && popd"
   },
   "author": "David Schmitz",
   "license": "MIT",

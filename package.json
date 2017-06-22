@@ -6,16 +6,12 @@
   "scripts": {
     "clean": "/bin/rm -fr build/tmp/* build/*zip",
     "lint": "node_modules/jshint/bin/jshint src/ test/",
+    "test": "lab -r console -o stdout -r html -o build/report/coverage.html -r lcov -o build/report/lcov.info",
     "package": "pushd build/tmp && cp -rf ../../package.json ../../src/* . && npm i --production && zip -r -1 ../skill.zip * && popd"
   },
   "author": "David Schmitz",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^0.22.0",
-    "config": "^1.26.1",
-    "hapi": "^16.1.1",
-    "joi": "^10.6.0",
-    "wreck": "^12.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

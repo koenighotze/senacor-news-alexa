@@ -1,8 +1,17 @@
 {
   "name": "senacor-aktuelles",
-  "version": "1.0.0",
-  "description": "News server for senacor events",
+  "version": "1.1.0",
+  "description": "Amazon Alexa skill for serving news and events from Senacor",
   "main": "index.js",
+  "author": "David Schmitz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koenighotze/senacor-news-alexa/issues"
+  },
+  "repository" :{
+    "type": "git",
+    "url": "git@github.com:koenighotze/senacor-news-alexa.git"
+  },
   "scripts": {
     "clean": "/bin/rm -fr build/tmp/* build/*zip",
     "lint": "node_modules/jshint/bin/jshint src/ test/",
@@ -11,8 +20,6 @@
     "update": "aws lambda update-function-code --function-name senacorTechnologies --region eu-west-1 --zip-file fileb://build/skill.zip",
     "invoke": "aws lambda invoke --function-name senacorTechnologies --region eu-west-1 --payload file://test/testevent.json out.json"
   },
-  "author": "David Schmitz",
-  "license": "MIT",
   "dependencies": {
     "alexa-sdk": "^1.0.15",
     "cheerio": "^1.0.0-rc.2",

@@ -24,7 +24,7 @@
     "alexa-sdk": "^1.0.15",
     "cheerio": "^1.0.0-rc.2",
     "jsonfile": "^4.0.0",
-    "wreck": "^12.2.0"
+    "wreck": "^12.5.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
